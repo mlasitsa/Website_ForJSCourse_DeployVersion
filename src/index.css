@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-weight: 700;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #53E3DB;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  background-color: #F7DF1E;
+  border-color: #F7DF1E;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.header {
+  background-color: #53E3DB;
+  color: black;
+  width: 100vw;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.jsLogo {
+  align-self: center;
+  margin-right: 40px;
+}
+
+.middle {
+  display: flex;
+  align-items: center; 
+}
+
+.logo {
+  max-width: 100%; 
+  
+}
+
+
+.main-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.text-content {
+  margin-right: 20px; 
+}
+
+.course-description {
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 100px;
+  
+}
+
+.main-layout .text-content h2 {
+  margin-bottom: -25px; 
+}
+
+.course-description p {
+  margin-bottom: -18px;
+  font-weight: bold;
+}
+
+.header-rectangle {
+  background-color: #53E3DB;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.introBox {
+  background-color: transparent;
+  color: black;
+  border: 7px solid #53E3DB;
+  height: 300px;
+  width: 600px;
+  border-radius: 25px;
+  position: absolute;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;    
+  font-weight: bold;
+}
+
+.introBoxBody {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.unitBox {
+    background-color: transparent;
+    color: black;
+    border: 7px solid #53E3DB;
+    height: 400px;
+    width: 300px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;    
+    font-weight: bold;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .unitBoxLine {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-left: 10px;
+  }
+
+  .unitBox p {
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: -5px;
+    text-align: center;
+  }
+  
+  
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.4em;
+  }
+
+  .header-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-layout {
+    flex-direction: column;
+  }
+
+  .unitBox {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .unitBoxLine {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .introBox {
+    width: 90%;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .right, .middle, .jsLogo {
+    margin: 10px 0;
+  }
+
+  .introBox {
+    height: 250px;
+    width: 80%;
+  }
+
+  .unitBox {
+    height: 300px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+}
