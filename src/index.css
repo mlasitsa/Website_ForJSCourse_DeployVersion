@@ -4,11 +4,9 @@
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   font-weight: 700;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -184,73 +182,66 @@ button:focus-visible {
   
   
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff; /* Ensure background is white in light mode */
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f9f9f9;
+      color: #213547;
+    }
   }
-  a:hover {
-    color: #747bff;
+  
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2.4em;
+    }
+  
+    .header-content {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .main-layout {
+      flex-direction: column;
+    }
+  
+    .unitBox {
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .unitBoxLine {
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+    }
+  
+    .introBox {
+      width: 90%;
+      margin-top: 20px;
+    }
   }
-  button {
-    background-color: #f9f9f9;
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    .right, .middle, .jsLogo {
+      margin: 10px 0;
+    }
+  
+    .introBox {
+      height: 250px;
+      width: 80%;
+    }
+  
+    .unitBox {
+      height: 300px;
+    }
   }
-}
-
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 2.4em;
-  }
-
-  .header-content {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .main-layout {
-    flex-direction: column;
-  }
-
-  .unitBox {
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .unitBoxLine {
-    flex-direction: column;
-    align-items: center;
-    margin-right: 0;
-  }
-
-  .introBox {
-    width: 90%;
-    margin-top: 20px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  h1 {
-    font-size: 1.8em;
-  }
-
-  .right, .middle, .jsLogo {
-    margin: 10px 0;
-  }
-
-  .introBox {
-    height: 250px;
-    width: 80%;
-  }
-
-  .unitBox {
-    height: 300px;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-}
