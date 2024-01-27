@@ -16,7 +16,8 @@
 a {
   font-weight: 500;
   color: #646cff;
-  text-decoration: inherit;
+  text-decoration: none;
+  transition: color 0.25s;   /* Changed */
 }
 a:hover {
   color: #535bf2;
@@ -24,11 +25,14 @@ a:hover {
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 3.2em;   /*calc(1em = 1vw)*/
+  line-height: 1.0;
 }
 
 button {
@@ -40,7 +44,7 @@ button {
   font-family: inherit;
   background-color: #53E3DB;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: all 0.25s;
 }
 button:hover {
   background-color: #F7DF1E;
@@ -83,7 +87,6 @@ button:focus-visible {
 
 .logo {
   max-width: 100%; 
-  
 }
 
 
@@ -103,7 +106,6 @@ button:focus-visible {
   margin-top: 100px;
   text-align: center;
   margin-bottom: 100px;
-  
 }
 
 .main-layout .text-content h2 {
@@ -137,6 +139,7 @@ button:focus-visible {
   flex-direction: column;
   align-items: center;    
   font-weight: bold;
+  max-width: 500px;
 }
 
 .introBoxBody {
@@ -168,9 +171,8 @@ button:focus-visible {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     flex-direction: row;
-    margin-left: 10px;
-    margin-left: 10px;
   }
 
   .unitBox p {
@@ -196,52 +198,4 @@ button:focus-visible {
     }
   }
   
-  @media screen and (max-width: 768px) {
-    h1 {
-      font-size: 2.4em;
-    }
   
-    .header-content {
-      flex-direction: column;
-      justify-content: center;
-    }
-  
-    .main-layout {
-      flex-direction: column;
-    }
-  
-    .unitBox {
-      width: 100%;
-      margin-top: 20px;
-    }
-  
-    .unitBoxLine {
-      flex-direction: column;
-      align-items: center;
-      margin-right: 0;
-    }
-  
-    .introBox {
-      width: 90%;
-      margin-top: 20px;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    h1 {
-      font-size: 1.8em;
-    }
-  
-    .right, .middle, .jsLogo {
-      margin: 10px 0;
-    }
-  
-    .introBox {
-      height: 250px;
-      width: 80%;
-    }
-  
-    .unitBox {
-      height: 300px;
-    }
-  }
