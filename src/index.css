@@ -85,10 +85,6 @@ button:focus-visible {
   align-items: center; 
 }
 
-.logo {
-  max-width: 100%; 
-}
-
 
 .main-layout {
   display: flex;
