@@ -92,6 +92,7 @@ button:focus-visible {
   justify-content: space-around;
   text-align: center;
   margin-top: 100px;
+  flex-wrap: wrap;
 }
 
 .text-content {
@@ -125,8 +126,8 @@ button:focus-visible {
   background-color: transparent;
   color: black;
   border: 7px solid #53E3DB;
-  height: 300px;
-  width: 600px;
+  height: 28vh;
+  width: 27vw;
   border-radius: 25px;
   position: absolute;
   margin-top: 50px;
@@ -134,8 +135,8 @@ button:focus-visible {
   justify-content: space-around;
   flex-direction: column;
   align-items: center;    
-  font-weight: bold;
-  max-width: 500px;
+  min-width: 300px; /* Minimum width */
+  min-height: 150px; /* Minimum height */
 }
 
 .introBoxBody {
