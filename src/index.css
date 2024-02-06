@@ -78,13 +78,12 @@ button:focus-visible {
 .jsLogo {
   align-self: center;
   margin-right: 40px;
-  max-width: 100%;
+
 }
 
 .middle {
   display: flex;
   align-items: center; 
-  max-width: 100%;
 }
 
 
